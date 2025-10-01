@@ -1,0 +1,2 @@
+user default off
+user retail-pcvc-service on >/inspire/vo/dev/app/retail-pcvc-service ~* &* +@all
