@@ -120,3 +120,6 @@ wheels/
 *.bak
 *.backup
 *.old
+
+# Restate files
+.volumes/
