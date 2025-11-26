@@ -62,6 +62,8 @@ services:
       - "9071:9071"
     volumes:
       - ./.volumes/restate:/restate-data
+    environment:
+      - RESTATE_NODE_NAME=local-restate
     networks:
       - default
     logging:
