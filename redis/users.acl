@@ -1,2 +1,3 @@
-user default off
-user retail-pcvc-service on >/inspire/vo/dev/app/retail-pcvc-service ~* &* +@all
+user default on nopass ~* &* +@all
+user auth-service on nopass ~* &* +@all
+user retail-pcvc-service on nopass ~* &* +@all
