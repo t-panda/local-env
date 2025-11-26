@@ -60,14 +60,8 @@ services:
       - "8080:8080"
       - "9070:9070"
       - "9071:9071"
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-    environment:
-      - RESTATE_TRACING_ENDPOINT=http://jaeger:4317
     volumes:
       - ./.volumes/restate:/restate-data
-      - ./restate.toml:/config/restate.toml
-    command: --config-file /config/restate.toml --node-name local-restate
     networks:
       - default
     logging:
